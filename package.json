@@ -1,0 +1,34 @@
+{
+  "name": "console-events",
+  "version": "0.0.1",
+  "description": "Isomorphic console event listener",
+  "main": "./lib/index.js",
+  "scripts": {
+    "build": "tsc",
+    "publish-local": "tsc && yalc publish",
+    "publish-prod": "tsc && npm publish --access public"
+  },
+  "devDependencies": {
+    "@types/node": "^18.11.17",
+    "mikey-pro": "^6.0.5",
+    "typescript": "^4.9.4"
+  },
+  "files": [
+    "lib/",
+    "README.md",
+    "LICENSE"
+  ],
+  "license": "MIT",
+  "repository": "https://github.com/chiefmikey/console-events",
+  "homepage": "https://github.com/chiefmikey/console-events",
+  "bugs": "https://github.com/chiefmikey/console-events/issues",
+  "keywords": [
+    "console-events",
+    "console",
+    "events"
+  ],
+  "contributors": [
+    "Mikl Wolfe <wolfe@mikl.io> (https://github.com/chiefmikey)",
+    "Zelbov (https://github.com/zelbov)"
+  ]
+}
