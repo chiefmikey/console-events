@@ -12,8 +12,8 @@ console.removeEventListener('log', listener);
 
 console.log('console without event'); // > 'console without event'
 
-const defaultPreventedListener = (e: ConsoleEvent) => {
-  e.preventDefault();
+const defaultPreventedListener = (event: ConsoleEvent) => {
+  event.preventDefault();
   console.default.log('default prevented');
 };
 
@@ -23,8 +23,8 @@ console.log('you will never see this!'); // > 'default prevented'
 
 console.removeEventListener('log', defaultPreventedListener);
 
-const multipleArgumentsListener = (e: ConsoleEvent) => {
-  console.default.log(`${JSON.stringify(e.arguments)}`);
+const multipleArgumentsListener = (event: ConsoleEvent) => {
+  console.default.log(`${JSON.stringify(event.arguments)}`);
 };
 
 console.addEventListener('log', multipleArgumentsListener);

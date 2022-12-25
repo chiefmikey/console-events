@@ -1,3 +1,6 @@
-import { console, ConsoleEvent, ConsoleEventCallback, ConsoleEventInit } from './src/ConsoleEvents';
-
-export { console, ConsoleEvent, ConsoleEventCallback, ConsoleEventInit };
+export {
+  console,
+  ConsoleEventCallback,
+  ConsoleEvent,
+  ConsoleEventInit,
+} from './src/ConsoleEvents';
